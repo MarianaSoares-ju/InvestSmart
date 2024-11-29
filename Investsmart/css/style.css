@@ -1,0 +1,156 @@
+:root {
+    --ouro: #ffe347;  
+    --roxo-lavanda: #b5b5e7;   
+    --laranja-tangerina: #FFA500;
+    --roxo-escuro: #7c68a8;   
+    --cinza-chumbo: #36454F;  
+    --preto: #000;
+    --amarelo-sol: #FFD700;  
+
+       
+}
+
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    background-color: var(--roxo-lavanda);
+    color: var(--ouro);
+    height: 15vh;
+    border-bottom: 5px solid var(--laranja-tangerina);
+    text-shadow: 5px 5px 5px var(--cinza-chumbo);
+}
+
+header i{
+    font-size: 4rem;   
+}
+
+header h1{
+    font-size: 3rem;
+}
+
+
+
+main{
+    height: 80vh;
+    background-color: var(--roxo-escuro);
+    display:flex;
+}
+
+form{
+    margin: auto;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+    justify-content:first baseline;
+    border: 3px solid var(--ouro);
+    background-color: var(--roxo-lavanda);
+    border-radius: 5px;
+    padding: 10px;
+    color: var(--preto);
+    text-shadow: 3px 3px 3px var(--cinza-chumbo);
+}
+
+form h2, label, input{
+    width: 100%;
+}
+
+form h2{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+form label{
+    font-size: 1rem;    
+    margin-bottom: 5px;  
+}
+
+form input{
+    outline: none;
+    border: 2px solid var(--preto);
+    border-radius: 5px;
+    background-color: transparent;
+    height: 40px;
+    font-size: 1.5rem;
+    padding-left: 5px;
+    padding-right: 5px;
+    color:var(--laranja-tangerina);
+    font-weight: 800;
+    margin-bottom: 30px;
+    transition: all 1s ease;
+}
+
+form input:focus{
+    background-color: var(--laranja-tangerina);
+    color:var(--roxo-escuro);
+}
+
+input::placeholder {
+    color:var(--roxo-lavanda);
+}
+
+form button{
+    width: 100%;
+    height: 40px;
+    background-color: var(--laranja-tangerina);
+    color:var(--preto);
+    font-size:1.2rem;
+    font-weight: 600;
+    border: 2px solid var(--amarelo-sol);
+    border-radius: 10px;
+    transition: all 1s ease;
+}
+
+form button:hover{
+    background-color: var(--ouro);
+}
+
+
+
+
+
+
+
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    background-color: var(--roxo-lavanda);
+    color: var(--preto);
+    height: 5vh;
+    border-top: 5px solid var(--laranja-tangerina);
+    text-shadow: 5px 5px 5px var(--cinza-chumbo);
+}
+
+footer i{
+    font-size: 1.5rem;   
+}
+
+footer p{
+    font-size: 1rem;
+}
+
+
+
+
+
